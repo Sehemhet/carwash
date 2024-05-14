@@ -1,0 +1,43 @@
+@font-face {
+    font-family:'ChakraPatch';
+    src: url ('./fonts/ChakraPetch-Bold.woff') format('woff');
+    font-weight:700;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face {
+    font-family:'ChakraPatch';
+    src: url ('./fonts/ChakraPetch-Regular.woff') format('woff');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    line-height: normal;
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'ChakraPatch', sans-serif;
+    transform:transition .2;
+    font-size:18px !important;
+}
+ul {
+    list-style: none;
+}
+
+button,a,input,mark,b,label,select,strong,h1,h2,h3,h4,h5,h6 {
+    border: none;
+    all: initial;
+    box-sizing: border-box;
+    font-size: initial;
+    font-weight: initial;
+}
+
+button:hover, 
+a:hover {
+    opacity:.7;
+}
