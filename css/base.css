@@ -20,11 +20,6 @@ input {color:var(--c1);}
 
 address {}
 
-.img_logo {
-    width:200px;
-    height:200px;
-}
-
 
 .page {
     display: flex;
