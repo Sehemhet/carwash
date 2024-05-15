@@ -17,7 +17,7 @@ input {background:var(--c5);padding:4px;border-radius:8px;}
 input::placeholder {color:var(--c3);}
 input {color:var(--c1);}
 
-
+header {position:sticky;left:0;top:0;z-index:9;background:rgba(255,255,255,0.8);}
 address {}
 
 
@@ -78,7 +78,49 @@ address {}
     display: flex; /* Показывать при добавлении класса visible */
 }
 
+.article_img {
+    width:100%;
+}
 
+.icon {
+    width:40px;
+}
+
+.arrow_link {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:32px;
+    width:32px;
+    background:var(--c3);
+    color:var(--c4);
+    border-radius:50%;
+}
+
+.pag {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+.pag_active {
+    color:var(--c3);
+    border:3px solid var(--c3);
+}
+.pag span {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid var(--c2);
+    height:40px;
+    width:40px;
+    border-radius:4px;
+}
+.pag span:hover {
+    opacity:.5;
+}
 
 /* {
     border:1px solid green;
