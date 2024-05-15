@@ -10,8 +10,8 @@
 <header>
     <div class="I_I f f_f fac p16t p16b">
         <div class="f_100 f">
-            <div class="fs16 c2">
-                Сьогодні у Києві
+            <div class="fs12 c2">
+                <div id="id17f842d32458f" a='{"t":"s","v":"1.2","lang":"ru","locs":[1572],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'>Источник данных о погоде: <a href="https://meteolabs.com.ua/укр/погода_київ/місяць/">місяць Київ погода</a></div><script async src="https://static1.meteolabs.com.ua/widgetjs/?id=id17f842d32458f"></script>
             </div>
         </div>
         <div class="f_100 f _f_">
@@ -33,15 +33,12 @@
 </header>
 
 <main>
-    <div class="I_I f _f_ fac">
-        <div class="f fc g16 fac w360m">
-            <h2 class="tagline fs32 _t_">
-                З нами Ваш день чистіший!
-            </h2>
+    <div class="page I_I _f_ fac">
+        <div class="f fc g16 fac w360m h _f_">
             <img class="img_logo br50" src="./images/logo.jpeg" alt="logo">
-            <h3 class="c2">
+            <h2 class="c2">
                 Автомийка
-            </h3>
+            </h2>
             <address class="f fc fac g8">
                 <a href="#" class="f g8">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 10.1433C4 5.64588 7.58172 2 12 2C16.4183 2 20 5.64588 20 10.1433C20 14.6055 17.4467 19.8124 13.4629 21.6744C12.5343 22.1085 11.4657 22.1085 10.5371 21.6744C6.55332 19.8124 4 14.6055 4 10.1433Z" stroke="#191919" stroke-width="1.5"></path> <circle cx="12" cy="10" r="3" stroke="#191919" stroke-width="1.5"></circle> </g></svg>
@@ -58,20 +55,47 @@
                     </span>
                 </a>
             </address>
-            <nav>
+            <nav id="main_nav">
                 <ul class="f fc g8">
-                    <li class="f">
-                        <button type="button" class="br8 fs16 p32l p32r p16t p16b f_auto b3 c4">
+                    <li class="f fc rel">
+                        <button type="button" class="br8 fs16 p32l p32r p16t p16b f_auto b3 c4 arrow arrow_c4" onclick="openPopup()">
                             Послуги
                         </button>
+                        <ul id="p1" class="fc g8 abs _t58 _l z10 w b4">
+                            <li class="f fc">
+                                <a href="#" class="br8 fs16 p32l p32r f_auto _b arrow arrow_c1 p16t p16b">
+                                    Загальний прайс
+                                </a>
+                            </li>
+                            <li class="f fc">
+                                <a href="#" class="br8 fs16 p32l p32r f_auto _b arrow arrow_c1 p16t p16b">
+                                    Миття авто
+                                </a>
+                            </li>
+                            <li class="f fc">
+                                <a href="#" class="br8 fs16 p32l p32r f_auto _b arrow arrow_c1 p16t p16b">
+                                    Хімчистка
+                                </a>
+                            </li>
+                            <li class="f fc">
+                                <a href="#" class="br8 fs16 p32l p32r f_auto _b arrow arrow_c1 p16t p16b">
+                                    Миття килимів
+                                </a>
+                            </li>
+                            <li class="f fc">
+                                <a href="#" class="br8 fs16 p32l p32r f_auto _b arrow arrow_c1 p16t p16b">
+                                    Озонація
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="f">
-                        <a href="#" class="br8 fs16 p32l p32r p16t p16b f_auto _b">
+                        <a href="#" class="br8 fs16 p32l p32r p16t p16b f_auto _b arrow arrow_c1">
                             Кафе
                         </a>
                     </li>
                     <li class="f">
-                        <a href="#" class="br8 fs16 p32l p32r p16t p16b f_auto _b">
+                        <a href="#" class="br8 fs16 p32l p32r p16t p16b f_auto _b arrow arrow_c1">
                             Правила та переваги
                         </a>
                     </li>
@@ -80,14 +104,63 @@
 
         </div>
     </div>
+    <div class="nav_menu I_I _f_ fac">
+        <ul class="f fc g32">
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Головна
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Автомийка
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Хімчистка
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Миття килимів
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Озонація
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Прайс
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Загальні правила
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Кафе
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="#">
+                    Відповідальність
+                </a>
+            </li>
+        </ul>
+    </div>
 </main>
 
 <footer>
     <div class="I_I f f_f fac p16t p16b">
-        <a class="f c2 fs16" href="#">
+        <a class="f c2 fs12" href="#">
             Політика конфіденційності
         </a>
-        <span class="f c2 fs16">
+        <span class="f c2 fs12">
                 Copyright © 2024 CarWash
             </span>
     </div>

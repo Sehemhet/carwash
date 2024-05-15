@@ -1,19 +1,41 @@
 function burgerMenu() {
-    var header = document.querySelector('header');
+    var page = document.querySelector('.page');
+    var nav_menu = document.querySelector('.nav_menu');
     var burger = document.querySelector('.burger');
-    var body = document.body;
 
-    if (header) {
-        header.classList.toggle('burger_menu');
-        var isMenuOpen = header.classList.contains('burger_menu');
+    // Переключаем классы при нажатии
+    page.classList.toggle('hidden');
+    nav_menu.classList.toggle('flex');
+    burger.classList.toggle('burger_cross');
 
-        setTimeout(function() {
-            // Этот код выполнится через одну секунду
-            if (isMenuOpen) {
-                burger.classList.add('burger_cross');
-            } else {
-                burger.classList.remove('burger_cross');
-            }
-        }, 500);
+    // Если бургер перестал быть крестиком, возвращаем его в стандартное положение
+    if (!burger.classList.contains('burger_cross')) {
+        burger.style.transform = 'none';
+    }
+}
+
+var img_logo_width;
+var img_logo_height;
+
+function openPopup() {
+    var serviceList = document.querySelector('#p1');
+    var mainNav = document.querySelector('#main_nav');
+    var img_logo = document.querySelector('.img_logo');
+
+    serviceList.classList.toggle('visible');
+    mainNav.classList.toggle('f_auto');
+
+    if (serviceList.classList.contains('visible')) {
+        // Сохраняем исходные размеры картинки перед изменением
+        img_logo_width = img_logo.style.width;
+        img_logo_height = img_logo.style.height;
+
+        // Изменяем размер картинки
+        img_logo.style.width = '100px';
+        img_logo.style.height = '100px';
+    } else {
+        // Восстанавливаем исходные размеры картинки
+        img_logo.style.width = img_logo_width;
+        img_logo.style.height = img_logo_height;
     }
 }

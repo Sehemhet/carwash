@@ -18,23 +18,73 @@ input::placeholder {color:var(--c3);}
 input {color:var(--c1);}
 
 
-
-.btn {background:var(--c6);color:var(--c7);border:1px solid var(--c7);max-width:320px; border-radius:8px; display:flex; align-items:center;justify-content:center; padding:4px;}
-.btn:hover {border:1px solid var(--c8);color:var(--c8);}
-.btn:active {border:1px solid var(--c9);color:var(--c9);}
-
-
 address {}
-
-
-.I_I {max-width:1112px;width:100%;margin:0 auto;}
 
 .img_logo {
     width:200px;
     height:200px;
 }
 
-/*
-* {
+
+.page {
+    display: flex;
+}
+.nav_menu {
+    display: none;
+}
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+
+.nav_menu a:hover {
+    border-bottom:1px solid var(--c3);
+}
+
+.arrow {
+    position: relative;
+}
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    transform: translateY(-50%) rotate(90deg);
+    transition: all 0.5s ease;
+}
+.arrow_c4::after {
+    border-color: transparent transparent transparent var(--c4); /* Цвета треугольника */
+}
+.arrow_c1::after {
+    border-color: transparent transparent transparent var(--c1); /* Цвета треугольника */
+}
+.arrow:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.5s ease;
+}
+.arrow:hover::focus {
+    transform: translateY(-50%) rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+
+#p1 {
+    display: none; /* Изначально скрыт */
+}
+
+#p1.visible {
+    display: flex; /* Показывать при добавлении класса visible */
+}
+
+
+
+/* {
     border:1px solid green;
 }
