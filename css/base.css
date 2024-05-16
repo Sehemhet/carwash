@@ -1,12 +1,11 @@
-strong {font-weight:700;color:var(--c4);}
-b {font-weight:700;color:var(--c4);}
-mark {font-weight:700;color:var(--c4);}
-time {font-weight:700;color:var(--c4);}
+strong {font-weight:700;color:var(--c2);}
+b {font-weight:700;color:var(--c2);}
+mark {font-weight:700;color:var(--c2);}
+time {font-weight:700;color:var(--c2);}
 span {font-size:18px;}
-p {font-size:18px;}
+p {font-size:18px;font-weight:400;}
 
 
-section {flex:1 1 auto; border-bottom:1px solid var(--c4);}
 article {display:flex;justify-content:space-between; gap:8px;flex:1 1 320px;}
 
 body {width:100%; display:flex; flex-direction:column;justify-content:space-between;min-height:100vh;padding:0px 8px;}
@@ -83,7 +82,7 @@ address {}
 }
 
 .icon {
-    width:40px;
+    width:24px;
 }
 
 .arrow_link {

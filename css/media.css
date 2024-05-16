@@ -6,6 +6,7 @@
 .y768 {display:none;}
 .y736 {display:none;}
 .y608 {display:none;}
+.y512 {display:none;}
 .y480 {display:none;}
 .y360 {display:none;}
 
@@ -37,6 +38,14 @@
 @media (max-width: 608px) {
     .n608 {display:none;}
     .y608 {display:flex;}
+}
+@media (max-width: 512px) {
+    .n512 {display:none;}
+    .y512 {display:flex;}
+    .wrap_list {flex-direction:column;}
+    .wrap_list .wrap_list__icons {flex-direction:row;}
+    .wrap_list .col1 {flex-direction:row;justify-content:space-between;}
+    .fw512 {flex-wrap:wrap;}
 }
 @media (max-width: 480px) {
     .n480 {display:none;}

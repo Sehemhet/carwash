@@ -59,7 +59,7 @@
 .g8 {gap:8px;}
 .g16 {gap:16px;}
 .g32 {gap:32px;}
-.g62 {gap:64px;}
+.g64 {gap:64px;}
 
 ._b {border: 1px solid var(--c1);}
 ._bt {border-top: 1px solid var(--c1);}
@@ -70,7 +70,10 @@
 
 .p16t {padding-top:16px;}
 .p16b {padding-bottom:16px;}
+.p16l {padding-left:16px;}
+.p16r {padding-right:16px;}
 .p16 {padding:16px;}
+.p8 {padding:8px;}
 
 .p10t {padding-top:10px;}
 .p10b {padding-bottom:10px;}
@@ -79,6 +82,7 @@
 .p32r {padding-right:32px;}
 .p32t {padding-top:32px;}
 .p32b {padding-bottom:32px;}
+.p32 {padding:32px;}
 .p4t {padding-top:4px;}
 .p4b {padding-bottom:4px;}
 
@@ -92,8 +96,11 @@
 .f100 {flex:1 1 100%}
 .f_100 {flex:1 1 100px}
 .f50 {flex:1 1 50%}
+.f_40 {flex:1 1 40%;}
+.f_60 {flex:1 1 60%;}
 .f_112_00 {flex:0 0 112px;}
 .f_112_11 {flex:1 1 112px;}
+.f_32 {flex:0 0 32px;}
 
 .w {width:100%;}
 .h {height:100%;}
