@@ -12,13 +12,16 @@ body {width:100%; display:flex; flex-direction:column;justify-content:space-betw
 main {width:100%; display:flex;flex:1 1 auto;}
 
 
-input {background:var(--c5);padding:4px;border-radius:8px;}
-input::placeholder {color:var(--c3);}
-input {color:var(--c1);}
+input {background:var(--c4);padding:16px 8px;border-radius:8px;}
+input::placeholder {color:var(--c6);}
+input {color:var(--c3);}
+
+textarea {background:var(--c4);padding:8px;;border-radius:8px;}
+textarea::placeholder {color:var(--c6);font-size:14px;}
+textarea {color:var(--c3);font-size:14px;}
 
 header {position:sticky;left:0;top:0;z-index:9;background:rgba(255,255,255,0.8);}
 address {}
-
 
 .page {
     display: flex;

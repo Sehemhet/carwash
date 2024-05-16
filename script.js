@@ -39,3 +39,29 @@ function openPopup() {
         img_logo.style.height = img_logo_height;
     }
 }
+
+
+// Функция для вычисления площади ковра и общей цены
+function calculateCarpet() {
+    // Получаем значения ширины и длины ковра из полей ввода
+    var width = parseFloat(document.getElementById('carpet_width').value.replace(',', '.'));
+    var length = parseFloat(document.getElementById('carpet_long').value.replace(',', '.'));
+
+    // Проверяем, что введены числовые значения
+    if (!isNaN(width) && !isNaN(length)) {
+        // Вычисляем площадь ковра
+        var area = width * length;
+        // Устанавливаем значение площади в соответствующем элементе
+        document.getElementById('res_carpet_count').textContent = area.toFixed(2);
+        // Вычисляем общую цену ковра
+        var price = area * 100;
+        // Устанавливаем значение общей цены в соответствующем элементе
+        document.getElementById('res_carpet_price').textContent = price.toFixed(2);
+    } else {
+        // Если введены некорректные значения, выводим сообщение об ошибке
+    }
+}
+
+// Слушаем изменения в полях ввода и пересчитываем результаты при изменении
+document.getElementById('carpet_width').addEventListener('input', calculateCarpet);
+document.getElementById('carpet_long').addEventListener('input', calculateCarpet);

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Автомийка на пр. Василя Порика 24б. Автомийка, хімчистка, мийка килимів, озонація. Телефонуйте +380634848248">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Car Wash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="I_I f f_f fac p16t p16b">
+        <div class="f_100 f">
+            <div class="fs12 c2">
+                <div id="id17f842d32458f" a='{"t":"s","v":"1.2","lang":"ru","locs":[1572],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'>Источник данных о погоде: <a href="https://meteolabs.com.ua/укр/погода_київ/місяць/">місяць Київ погода</a></div><script async src="https://static1.meteolabs.com.ua/widgetjs/?id=id17f842d32458f"></script>
+            </div>
+        </div>
+        <div class="f_100 f _f_">
+            <h1 class="fs22 c3 _t_">
+                Car Wash
+            </h1>
+        </div>
+        <div class="f_100 f _f">
+            <div class="burger" onclick="burgerMenu()">
+                <div class="burger__line_1"></div>
+                <div class="burger__line_2"></div>
+                <div class="burger__line_3"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+</header>
+
+<main>
+    <div class="page I_I fac _f_ fc g32">
+        <h2>
+            Калькулятор
+        </h2>
+        <div class="f fc g16 p8 b5 br8">
+            <!--Килим-->
+            <div class="f fc g16">
+                <h3>
+                    Килим
+                </h3>
+                <div class="f fac g8">
+                    <div class="f g8">
+                        <label for="carpet_width" class="f fc g4 fs12">
+                            Ширина м
+                            <input id="carpet_width" class="f w80" type="number" placeholder="0,00">
+                        </label>
+                        <label for="carpet_long" class="f fc g4 fs12">
+                            Довжина м
+                            <input id="carpet_long" class="f w80" type="number" placeholder="0,00">
+                        </label>
+                    </div>
+                    <div class="f fac g8">
+                        <div class="f fc fac g4">
+                            <div class="fs12">
+                                Площа м&#178;
+                            </div>
+                            <div id="res_carpet_count" class="fs14 c2 b4 f w80 p16t p16b br8 f _f_">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f fc fac g4">
+                            <div class="fs12">
+                                Вартісь ₴
+                            </div>
+                            <div id="res_carpet_price" class="fs14 c2 b4 f w80 p16t p16b br8 f _f_">
+                                0,0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Загалом-->
+            <div class="f fc g16">
+                <h3>
+                    Автомийка
+                </h3>
+                <div class="f fc g8">
+                    <div class="f g8 fc">
+                        <label for="day_work" class="f fc g4 fs12 w">
+                            25% (введіть ціни через пробіл)
+                            <textarea id="day_work" name="" cols="auto" rows="1" placeholder="введіть закази"></textarea>
+                        </label>
+                        <label for="day_work" class="f fc g4 fs12 w">
+                            30% (введіть ціни через пробіл)
+                            <textarea id="nigth_work" name="" cols="auto" rows="1" placeholder="введіть закази"></textarea>
+                        </label>
+                        <label for="day_work" class="f fc g4 fs12 w">
+                            40% (введіть ціни через пробіл)
+                            <textarea id="him_work" name="" id="" cols="auto" rows="1" placeholder="введіть закази"></textarea>
+                        </label>
+                    </div>
+                    <div class="f g4 f_f fac">
+                        <div class="f_64 f fc fac g4">
+                            <div class="fs12">
+                                значення
+                            </div>
+                            <div class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                К-сть
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                25%
+                            </div>
+                            <div id="percent_25" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                30%
+                            </div>
+                            <div id="percent_30" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                40%
+                            </div>
+                            <div id="percent_40" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                Усього
+                            </div>
+                            <div id="percent_100" class="fs12 c2 b4 f p8 br8 f _f_ w _b">
+                                0,0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f g4 f_f fac">
+                        <div class="f_64 f fc fac g4">
+                            <div class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                100%
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="all_25" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="all_30" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="all_40" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="all_100" class="fs12 c2 b4 f p8 br8 f _f_ w _b">
+                                0,0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f g4 f_f fac">
+                        <div class="f_64 f fc fac g4">
+                            <div class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                З/п
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="pice_25" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="piece_30" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="piece_40" class="fs12 c2 b4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div id="piece_100" class="fs12 c2 f p8 br8 f _f_ w b4 _b">
+                                0,0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="f g4 f_f fac">
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                Усього
+                            </div>
+                            <div id="all_case" class="fs12 b1 c4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                5%
+                            </div>
+                            <div id="percent_5" class="fs12 b1 c4 f p8 br8 f _f_ w b1">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                7%
+                            </div>
+                            <div id="percent_7" class="fs12 b1 c4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                        <div class="f_auto f fc fac g4">
+                            <div class="fs12">
+                                Середня
+                            </div>
+                            <div id="midl_value" class="fs12 b1 c4 f p8 br8 f _f_ w">
+                                0,0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav_menu I_I _f_ fac">
+        <ul class="f fc g32">
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="index.html">
+                    Головна
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-list.html">
+                    Автомийка
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-list.html">
+                    Хімчистка
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-single_carpet.html">
+                    Миття килимів
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-general.html">
+                    Озонація
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-price.html">
+                    Прайс
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-general.html">
+                    Загальні правила
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-general.html">
+                    Кафе
+                </a>
+            </li>
+            <li class="f">
+                <a class="fs16 p32l p32r f_auto _bb" href="page-general.html">
+                    Відповідальність
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <div class="I_I f f_f fac p16t p16b">
+        <a class="f fs12" href="page-private.html">
+            Політика конфіденційності
+        </a>
+        <a href="page-calculator.html" class="f fs12">
+            Copyright © 2024 CarWash
+        </a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

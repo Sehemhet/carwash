@@ -104,11 +104,18 @@
 .f_112_00 {flex:0 0 112px;}
 .f_112_11 {flex:1 1 112px;}
 .f_32 {flex:0 0 32px;}
+.f_32 {flex:0 0 32px;}
+.f_64 {flex:0 0 64px;}
 
 .w {width:100%;}
 .h {height:100%;}
+.h_auto {height:auto;}
 .w360M {max-width:360px; width:100%;}
 .w432M {max-width:432px; width:100%;}
+
+.w80 {width:80px;}
+
+
 .n {display:none;}
 
 
