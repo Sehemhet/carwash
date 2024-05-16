@@ -4,6 +4,7 @@
     --c3:#116C11;   /* green */
     --c4:#FFFFFF;   /* white */
     --c5:#F4F4F4;   /* cards */
+    --c6:#A9A9A9;   /* grey light */
 }
 
 .c1 {color:var(--c1);}
@@ -11,6 +12,7 @@
 .c3 {color:var(--c3);}
 .c4 {color:var(--c4);}
 .c5 {color:var(--c5);}
+.c6 {color:var(--c6);}
 
 
 .b1 {background:var(--c1);}
@@ -18,6 +20,7 @@
 .b3 {background:var(--c3);}
 .b4 {background:var(--c4);}
 .b5 {background:var(--c5);}
+.b6 {background:var(--c6);}
 
 
 .fs12 {font-size:12px !important;}
