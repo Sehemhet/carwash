@@ -41,27 +41,67 @@ function openPopup() {
 }
 
 
+//// Функция для вычисления площади ковра и общей цены
+//function calculateCarpet() {
+//    // Получаем значения ширины и длины ковра из полей ввода
+//    var width = parseFloat(document.getElementById('carpet_width').value.replace(',', '.'));
+//    var length = parseFloat(document.getElementById('carpet_long').value.replace(',', '.'));
+//
+//    // Проверяем, что введены числовые значения
+//    if (!isNaN(width) && !isNaN(length)) {
+//        // Вычисляем площадь ковра
+//        var area = width * length;
+//        // Устанавливаем значение площади в соответствующем элементе
+//        document.getElementById('res_carpet_count').textContent = area.toFixed(2);
+//        // Вычисляем общую цену ковра
+//        var price = area * 100;
+//        // Устанавливаем значение общей цены в соответствующем элементе
+//        document.getElementById('res_carpet_price').textContent = price.toFixed(2);
+//    } else {
+//        // Если введены некорректные значения, выводим сообщение об ошибке
+//    }
+//}
+//
+//// Слушаем изменения в полях ввода и пересчитываем результаты при изменении
+//document.getElementById('carpet_width').addEventListener('input', calculateCarpet);
+//document.getElementById('carpet_long').addEventListener('input', calculateCarpet);
+
+
 // Функция для вычисления площади ковра и общей цены
 function calculateCarpet() {
     // Получаем значения ширины и длины ковра из полей ввода
-    var width = parseFloat(document.getElementById('carpet_width').value.replace(',', '.'));
-    var length = parseFloat(document.getElementById('carpet_long').value.replace(',', '.'));
+    var widthElement = document.getElementById('carpet_width');
+    var lengthElement = document.getElementById('carpet_long');
 
-    // Проверяем, что введены числовые значения
-    if (!isNaN(width) && !isNaN(length)) {
-        // Вычисляем площадь ковра
-        var area = width * length;
-        // Устанавливаем значение площади в соответствующем элементе
-        document.getElementById('res_carpet_count').textContent = area.toFixed(2);
-        // Вычисляем общую цену ковра
-        var price = area * 100;
-        // Устанавливаем значение общей цены в соответствующем элементе
-        document.getElementById('res_carpet_price').textContent = price.toFixed(2);
-    } else {
-        // Если введены некорректные значения, выводим сообщение об ошибке
+    // Проверяем, существуют ли элементы
+    if (widthElement && lengthElement) {
+        var width = parseFloat(widthElement.value.replace(',', '.'));
+        var length = parseFloat(lengthElement.value.replace(',', '.'));
+
+        // Проверяем, что введены числовые значения
+        if (!isNaN(width) && !isNaN(length)) {
+            // Вычисляем площадь ковра
+            var area = width * length;
+            // Устанавливаем значение площади в соответствующем элементе
+            document.getElementById('res_carpet_count').textContent = area.toFixed(2);
+            // Вычисляем общую цену ковра
+            var price = area * 100;
+            // Устанавливаем значение общей цены в соответствующем элементе
+            document.getElementById('res_carpet_price').textContent = price.toFixed(2);
+        } else {
+            // Если введены некорректные значения, выводим сообщение об ошибке
+        }
     }
 }
 
-// Слушаем изменения в полях ввода и пересчитываем результаты при изменении
-document.getElementById('carpet_width').addEventListener('input', calculateCarpet);
-document.getElementById('carpet_long').addEventListener('input', calculateCarpet);
+// Проверяем наличие элементов перед добавлением слушателей
+var widthInput = document.getElementById('carpet_width');
+var lengthInput = document.getElementById('carpet_long');
+
+if (widthInput) {
+    widthInput.addEventListener('input', calculateCarpet);
+}
+
+if (lengthInput) {
+    lengthInput.addEventListener('input', calculateCarpet);
+}

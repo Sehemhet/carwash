@@ -124,6 +124,12 @@ address {}
     opacity:.5;
 }
 
+.wrap-text * {
+    word-break: break-word; /* Перенос слов при необходимости */
+    overflow-wrap: break-word; /* Перенос слов для предотвращения переполнения */
+}
+
+
 /* {
     border:1px solid green;
 }
