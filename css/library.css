@@ -142,6 +142,10 @@
 
 .I_I {max-width:1112px;width:100%;margin:0 auto;}
 
+.ul {
+    list-style: disc; /* або інше значення, наприклад, circle або square */
+    padding-left:30px;
+}
 
 .contain {
     object-fit:contain;
