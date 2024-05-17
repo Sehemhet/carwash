@@ -103,9 +103,10 @@
 
 
 .f_auto {-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;}
-.f100 {flex:1 1 100%}
-.f_100 {flex:1 1 100px}
-.f50 {flex:1 1 50%}
+.f100 {flex:1 1 100%;}
+.f_100 {flex:1 1 100px;}
+
+.f50 {flex:1 1 50%;}
 .f_40 {flex:1 1 40%;}
 .f_60 {flex:1 1 60%;}
 .f_112_00 {flex:1 0 112px;}
@@ -122,9 +123,11 @@
 .w432M {max-width:432px; width:100%;}
 .w80 {max-width:80px;}
 .w80 {width:80px;}
+.w320 {flex:0 0 272px;min-width:272px;}
 
 .n {display:none;}
 
+.qwe {max-height:200px;}
 
 .rel {position:relative;}
 .abs {position:absolute;}
@@ -140,7 +143,9 @@
 .I_I {max-width:1112px;width:100%;margin:0 auto;}
 
 
-
+.contain {
+    object-fit:contain;
+}
 
 
 
