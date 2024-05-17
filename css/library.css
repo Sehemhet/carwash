@@ -5,6 +5,7 @@
     --c4:#FFFFFF;   /* white */
     --c5:#F4F4F4;   /* cards */
     --c6:#A9A9A9;   /* grey light */
+    --c7:#8B0000;   /* red */
 }
 
 .c1 {color:var(--c1);}
@@ -13,6 +14,7 @@
 .c4 {color:var(--c4);}
 .c5 {color:var(--c5);}
 .c6 {color:var(--c6);}
+.c7 {color:var(--c7);}
 
 
 .b1 {background:var(--c1);}
@@ -21,6 +23,7 @@
 .b4 {background:var(--c4);}
 .b5 {background:var(--c5);}
 .b6 {background:var(--c6);}
+.b7 {background:var(--c7);}
 
 
 .fs12 {font-size:12px !important;}
