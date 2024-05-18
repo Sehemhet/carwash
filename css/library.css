@@ -83,6 +83,7 @@
 .p16 {padding:16px;}
 .p8 {padding:8px;}
 .p8t {padding-top:8px;}
+.p4 {padding:4px;}
 
 .p10t {padding-top:10px;}
 .p10b {padding-bottom:10px;}
@@ -115,6 +116,8 @@
 .f_64 {flex:1 1 80px;}
 .f_80 {flex:0 0 80px;}
 .f_96 {flex:1 1 96px;}
+.f_256 {flex:1 1 256px;}
+.f_176 {flex:1 1 176px;}
 
 .w {width:100%;}
 .h {height:100%;}
