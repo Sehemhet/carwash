@@ -130,6 +130,11 @@ address {}
 }
 
 
+.choice_el {
+    color:var(--c4);
+    background:var(--c1)!important;
+}
+
 /* {
     border:1px solid green;
 }
