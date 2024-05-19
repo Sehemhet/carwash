@@ -1,13 +1,13 @@
-@import url('css/reset.css');
-@import url('css/base.css');
-@import url('css/library.css');
-@import url('css/burger.css');
-@import url('css/media.css');
-
-
+@import url('min.css');
 
 
 /*
 * {
     border:1px solid green;
 }
+
+@import url('css/reset.css');
+@import url('css/base.css');
+@import url('css/library.css');
+@import url('css/burger.css');
+@import url('css/media.css');

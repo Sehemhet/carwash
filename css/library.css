@@ -49,16 +49,9 @@
 ._f_ {-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
 
 
-.T_t::first-letter {text-transform: uppercase;}
-.t {text-transform: lowercase;}
-.T {text-transform: uppercase;}
 ._t_ {text-align:center;}
 ._t {text-align:end;}
 .t_ {text-align:start;}
-.Tt {text-transform: capitalize;}
-.t_nw {white-space: nowrap;}
-.t_t {text-align: justify;}
-
 .fw700 {font-weight:700;}
 .fw400 {font-weight:400;}
 
@@ -147,16 +140,10 @@
 .I_I {max-width:1112px;width:100%;margin:0 auto;}
 
 .ul {
-    list-style: disc; /* або інше значення, наприклад, circle або square */
+    list-style: disc;
     padding-left:30px;
 }
 
 .contain {
     object-fit:contain;
-}
-
-
-
-/* {
-    border:1px solid green;
 }
