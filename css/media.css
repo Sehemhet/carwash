@@ -38,6 +38,7 @@
 @media (max-width: 608px) {
     .n608 {display:none;}
     .y608 {display:flex;}
+    .fw608 {flex-wrap:wrap;}
 }
 @media (max-width: 512px) {
     .n512 {display:none;}
