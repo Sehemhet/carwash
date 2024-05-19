@@ -80,10 +80,6 @@ address {}
     display: flex; /* Показывать при добавлении класса visible */
 }
 
-.article_img {
-    width:100%;
-}
-
 .icon {
     width:28px;
 }
